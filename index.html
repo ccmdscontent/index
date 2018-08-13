@@ -1,2 +1,7 @@
-<h1 align="center"> Custom Commands Index </h1>
-<h2 align="center"> Welcome to Custom Commands link index! </h2>
+  <div class="jumbotron">
+    <div>
+      <h1 style="text-align: center"><%= bot.user.username %> Discord Bot</h1> <!--stop fucking around with css mel | -_- I'm trying to color it! Jeez you wouldn't have this if I didnt help u ¯\_(ツ)_/¯ | I was about to change it to yellow, seeing if it would work| true but ur making it look bad with red color, etc.. i think its good how it is-->
+      <h4 align="center"><% if(bot.appInfo.description.length > 3) { %> <%= bot.appInfo.description %> <% } else { %>None<% }%></h4>
+      <p style="text-align: center"><a class="btn btn-primary" href="/dashboard" role="button">Get Started</a> <a class="btn btn-primary" href="https://discordapp.com/oauth2/authorize?client_id=<%= bot.appInfo.id %>&scope=bot&response_type=code&redirect_uri=<%= encodeURIComponent(bot.config.dashboard.callbackURL) %>" role="button">Add Bot to Server</a> <a class="btn btn-primary" href="#notice" role="button">Important Notice</a></p>
+    </div>
+  </div>
